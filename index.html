@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário AWS</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="box">
+        <form action="" id="formulario-aws">
+            <fieldset>
+                <legend class="box__titulo">Formulário para criação dos acessos na AWS</legend>
+                <br>
+                <div class="box__formulario">
+                    <input type="text" id="nomesobrenome" name="nome_sobrenome" class="box__padrao" required>
+                    <label for="nomesobrenome" class="box__label">1. Nome e Sobrenome *</label>
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <input type="text" id="cargo" name="usuario_cargo" class="box__padrao" required>
+                    <label for="cargo" class="box__label">2. Cargo *</label>
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <input type="text" id="nomesquad" name="nome_squad" class="box__padrao" required>
+                    <label for="nomesquad" class="box__label">3. Nome da Squad *</label>
+                    
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <input type="text" id="contaaws" name="conta_aws" class="box__padrao" required>
+                    <label for="contaaws" class="box__label">4. Qual o ID da conta AWS? *</label>
+                    
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <input type="text" id="ambiente" name="ambiente" class="box__padrao" required>
+                    <label for="ambiente" class="box__label">5. Informar o ambiente (Ex: Dev, Hlm, Prod...) onde os serviços serão realizados *</label>
+                    
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <input type="text" id="recursosutilizados" name="recursos_utilizados" class="box__padrao" required>
+                    <label for="recursosutilizados" class="box__label">6. Quais recursos serão utilizados? *</label>
+                    
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <input type="text" id="descriçãoserviços" name="descrição_serviços" class="box__padrao" required>
+                    <label for="descriçãoserviços" class="box__label">7. Descreva os serviços que serão realizados *</label>
+                    
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <label for="tipodeacesso" id="tipodeacesso">8. Escolha o tipo de acesso na AWS: *</label>
+                    <select id="acesso" name="acesso" class="box__select">
+                        <option value="Console"> CONSOLE</option>
+                        <option value="CLI/SDK"> CLI/SDK</option>
+                        <option value="Ambos">AMBOS</option>
+                    </select>
+                </div>
+                <br>
+                <div class="box__formulario">
+                    <label for="informaçõesadicionais" id="informaçõesadicionais" >9. Para outros tipos de acessos ou alterações de acessos, por gentileza informar nesse campo: *</label>
+                    <textarea cols="50" rows="5" id="mensagem" class="box__padrao" required placeholder="Informações adicionais"></textarea>
+                </div>
+                <br>
+                <button type="submit" name="submit" id="submit" class="botão" form="formulario-aws">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
